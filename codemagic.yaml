@@ -1,0 +1,16 @@
+workflows:
+  retroai-android-debug:
+    name: RetroAI Android Debug
+    max_build_duration: 60
+    instance_type: linux_x2
+    scripts:
+      - name: Set Android SDK path
+        script: echo "sdk.dir=$ANDROID_SDK_ROOT" > "$CM_BUILD_DIR/local.properties"
+      - name: Install Gradle 8.2.1
+        script: |
+          curl -L https://services.gradle.org/distributions/gradle-8.2.1-bin.zip -o /tmp/gradle.zip
+          unzip -q /tmp/gradle.zip -d /tmp
+      - name: Build APK
+        script: /tmp/gradle-8.2.1/bin/gradle :app:assembleDebug
+    artifacts:
+      - app/build/outputs/**/*.apk

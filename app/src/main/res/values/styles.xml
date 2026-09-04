@@ -1,0 +1,7 @@
+<resources>
+    <style name="AppTheme" parent="android:style/Theme.Holo.Light.NoActionBar">
+        <item name="android:fontFamily">sans</item>
+        <item name="android:windowBackground">@color/msn_pale</item>
+        <item name="android:colorAccent">@color/msn_blue</item>
+    </style>
+</resources>

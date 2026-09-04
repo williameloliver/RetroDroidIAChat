@@ -1,0 +1,10 @@
+<resources>
+    <color name="msn_blue">#2D70B7</color>
+    <color name="msn_blue_dark">#1D4F87</color>
+    <color name="msn_pale">#EAF4FF</color>
+    <color name="msn_sidebar">#DDEEFF</color>
+    <color name="msn_border">#9CB9D8</color>
+    <color name="msn_green">#39A844</color>
+    <color name="white">#FFFFFF</color>
+    <color name="text_dark">#243444</color>
+</resources>
